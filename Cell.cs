@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
-using static NeuralNet.Program;
+using static NeuralNet.NeuralNet;
 
 
 /// <summary>
@@ -19,7 +19,7 @@ namespace NeuralNet
     /// </summary>
     interface ValueFillClass
     {
-        public void BuildValues();
+        void BuildValues();
     }
     /// <summary>
     /// Cell is a representation of a subsection of an input, which in itself is the 'root' cell.
@@ -229,7 +229,6 @@ namespace NeuralNet
                     break;
                 }
             }
-            DebugWrite("Cell->GetCall()-> Done Getting Cell", " Return Value is " + pickedValueClass.value + ", Picked Weight is " + pickedWeight, false);
             return pickedValueClass;
 
         }

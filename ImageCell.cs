@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
-using static NeuralNet.Program;
 
 /// <summary>
 /// 
@@ -22,7 +21,7 @@ namespace NeuralNet
         public ImageCell(Bitmap subsection) :base()
         {
             img = subsection;
-            DebugWrite("ImageCell->Cell()->", String.Format("Image Width/Height is {0},{1}", img.Width, img.Height), false); // Confirm Iamge is real and halfing each repitition
+            NeuralNet.DebugWrite("ImageCell->Cell()->", String.Format("Image Width/Height is {0},{1}", img.Width, img.Height), false); // Confirm Iamge is real and halfing each repitition
             BuildValuesNew();
 
         }
@@ -36,7 +35,7 @@ namespace NeuralNet
         public override Cell CreateSubCell(int i, int f)
         {
             Bitmap subImage = new Bitmap(img.Width / 2, img.Height / 2);
-            DebugWrite("ImageCell->Cell()->",String.Format("Image Width/Height is {0},{1}",img.Width,img.Height),false);
+            NeuralNet.DebugWrite("ImageCell->Cell()->",String.Format("Image Width/Height is {0},{1}",img.Width,img.Height),false);
             // Create new subImage
             for (int z = 0; z < subImage.Height; z++)
             {
