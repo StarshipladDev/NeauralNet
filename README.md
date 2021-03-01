@@ -135,6 +135,6 @@ I planned on this project improving my skills in the following:
 Unzip the 'Images' folder and run the .exe inside.
 
 Type any number between 1-11 and press the button to test whether the Neural Net thinks the given image is an apple.
-To use custoem iamges replace any Image file in the 'Maybe' folder with a 16x16 PNG useing only pure white,red or green pixels. 
+To use custom images replace any image file in the 'Maybe' folder with a 16x16 PNG useing only pure white,red or green pixels. 
 
 
